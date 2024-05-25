@@ -8,10 +8,7 @@ biblioteca = []
 
 #criando uma class
 @dataclass
-class Livro:
-    nome: str
-
-   
+class Livro: 
     titulo: str
     autor: str
     ano: int
@@ -26,12 +23,13 @@ QUANTIDADE_LIVRO = 2
 #solicitando cada item do livro
 for i in range (QUANTIDADE_LIVRO):
     livro = Livro (
-        nome=input("Digite o nome do livro: "),
+
         titulo= input("Qual o nome do livro: "),
         autor=input("Qual o nome do autor: "),
         ano=int(input("Em qual ano foi lançado: ")),
         categoria=input("Qual categoria vai receber: "),
         preco = float (input("Quanto ele vai valer: ")),
+        
     )
 
     #guardando numa lista
