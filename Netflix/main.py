@@ -29,7 +29,6 @@ class Usuario(): #não precisava do ()
 
     def ver_filmes (self):
         if cliente.plano == "basic":
-
             print ("01 - LAGOA DOS PATOS")
         
         elif cliente.plano == "premium":
