@@ -56,13 +56,14 @@ CONSERTA
 '''
 
 #atacar_npc(npc) = npc:hp - player:dano
-def atacar_npc(npc):
+#def atacar_npc(npc):
 
+atacar_player(npc) = player: hp - npc:dano
 
-#atacar_player(npc) = player: hp - npc:dano
 
 
 
 
 gerar_npcs(3)
 exibir_npcs()
+ 
