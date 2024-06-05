@@ -1,3 +1,10 @@
+'''
+CRIAR UMA CATEGORIA DE ASSISTIR FILMES PLATINA
+
+CRIAR UM SISTEMA DE PAGAMENTO NA TROCA DOS PLANOS 
+
+'''
+
 
 #LIMPANDO O TERMINAL DO VS CODE
 import os
@@ -28,17 +35,63 @@ class Usuario(): #não precisava do ()
             print("plano invalido")
 
     def ver_filmes (self):
+        
+        #LISTA DE TODOS OS FILMES + PLANOS
+        filmesBasic = ["RAMBO", "JACK", "PICA-PAU"]
+        filmesPremium = ["GRANDE LUTADOR","ERA DO GELO 6", "KING KONG"]
+        filmesPlatina = ["GIGANTE DE AÇO", "MATHEUS O GRANDE", "HOMEM ARANHA"]
+    
+        quantidade: int = 0
+
+        #LISTA DE FILMES BASIC
         if cliente.plano == "basic":
-            print ("01 - LAGOA DOS PATOS")
-        
+            print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
+            
+            for i in filmesBasic:
+                quantidade+=1
+                print(f"{quantidade} - {i}")
+
+            confirmaçãoBasic = int (input ("\nComeçar a assistir? "))
+
+
+            if confirmaçãoBasic == 1:
+                print(f"Assistindo: {filmesBasic[0]}")
+
+            if confirmaçãoBasic == 2:
+                print(f"Assistindo: {filmesBasic[1]}")
+
+            if confirmaçãoBasic == 3:
+                print(f"Assistindo: {filmesBasic [2]}")
+
+
+        #LISTA DE FILMES PREMIUM
         elif cliente.plano == "premium":
-            print("02 - RAMBO")
+            print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
+            
+            for i in filmesPremium:
+                quantidade+=1
+                print(f"{quantidade} - {i}")
 
-        elif cliente.plano == "platina":
-            print("O filme disponivel sua categoria - 03 - BAD BOYS 4")
+                confirmação = int (input ("\nComeçar a assistir? "))
+
+
+            if confirmação == 1:
+                print(f"Assistindo: {filmesPremium[0]}")
+
+            if confirmação == 2:
+                print(f"Assistindo: {filmesPremium[1]}")
+
+            if confirmação == 3:
+                print(f"Assistindo: {filmesPremium [2]}")
+
+            elif cliente.plano == "platina":
+                print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
+
+                for i in filmesPremium:
+                    quantidade+=1
+                    print(f"{quantidade} - {i}")
 
         
-        confirmação = input ("\nComeçar a assistir? ")
 
 
 
@@ -69,3 +122,4 @@ time.sleep(5)
 os.system("cls || clear")
 
 cliente.ver_filmes()
+print("\nPipoca? Refrigerante? Doces?")
