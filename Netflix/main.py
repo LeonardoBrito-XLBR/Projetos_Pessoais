@@ -84,12 +84,12 @@ class Usuario(): #não precisava do ()
             if confirmação == 3:
                 print(f"Assistindo: {filmesPremium [2]}")
 
-            elif cliente.plano == "platina":
-                print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
+        elif cliente.plano == "platina":
+            print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
 
-                for i in filmesPremium:
-                    quantidade+=1
-                    print(f"{quantidade} - {i}")
+            for i in filmesPremium:
+                quantidade+=1
+                print(f"{quantidade} - {i}")
 
         
 
