@@ -57,11 +57,13 @@ class Usuario(): #não precisava do ()
             if confirmaçãoBasic == 1:
                 print(f"Assistindo: {filmesBasic[0]}")
 
-            if confirmaçãoBasic == 2:
+            elif confirmaçãoBasic == 2:
                 print(f"Assistindo: {filmesBasic[1]}")
 
-            if confirmaçãoBasic == 3:
+            elif confirmaçãoBasic == 3:
                 print(f"Assistindo: {filmesBasic [2]}")
+            else:
+                print ("Opção Inválida!")
 
 
         #LISTA DE FILMES PREMIUM
@@ -78,11 +80,12 @@ class Usuario(): #não precisava do ()
             if confirmação == 1:
                 print(f"Assistindo: {filmesPremium[0]}")
 
-            if confirmação == 2:
+            elif confirmação == 2:
                 print(f"Assistindo: {filmesPremium[1]}")
 
-            if confirmação == 3:
-                print(f"Assistindo: {filmesPremium [2]}")
+            elif confirmação == 3:
+                print(f"Assistindo: {filmesPremium [2]}")            else:
+                print ("Opção Inválida!")
 
         elif cliente.plano == "platina":
             print(f"Olha {self.nome}, de acordo com seu plano, esses são os filmes disponiveis.")
@@ -90,10 +93,19 @@ class Usuario(): #não precisava do ()
             for i in filmesPremium:
                 quantidade+=1
                 print(f"{quantidade} - {i}")
-
-        
-
-
+            
+            if confirmação == 1:
+                print (f"Assistindo :{filmesPlatina[0]}")
+            
+            elif confirmação == 2:
+                print (f"Assistindo :{filmesPlatina[1]}")
+            
+            elif confirmação == 3:
+                print (f"Assistindo :{filmesPlatina[2]}")
+            
+            else: 
+                print ("Opção Inválida!")
+            
 
 #COLOCANDO VALORES + ARMAZENANDO A CLASS EM UMA NOVA VARIAVEL 
 cliente = Usuario (
