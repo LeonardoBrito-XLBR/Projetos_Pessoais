@@ -1,6 +1,8 @@
 '''
 CRIAR UMA CATEGORIA DE ASSISTIR FILMES PLATINA
 
+PEDIR VALIDAÇÃO DE SENHA
+
 CRIAR UM SISTEMA DE PAGAMENTO NA TROCA DOS PLANOS 
 
 '''
@@ -84,7 +86,9 @@ class Usuario(): #não precisava do ()
                 print(f"Assistindo: {filmesPremium[1]}")
 
             elif confirmação == 3:
-                print(f"Assistindo: {filmesPremium [2]}")            else:
+                print(f"Assistindo: {filmesPremium [2]}") 
+                
+            else:
                 print ("Opção Inválida!")
 
         elif cliente.plano == "platina":
