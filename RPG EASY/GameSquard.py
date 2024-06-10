@@ -25,12 +25,13 @@ player = {
 }
 
 
-def criar_npc():
-    level = randint(0, 50)
+def criar_npc(level):
+    #level = randint(0, 50)
     novo_npc = {
         "nome": f"Monstro #{level}",
         "level": level,
         "dano": 5 * level,
+        "hp_max": 100 * level,
         "hp": 100 * level,
         "exp": 7 * level,
     }
@@ -41,13 +42,13 @@ def criar_npc():
 def gerar_npcs(num_npcs):
 
     for x in range(num_npcs):
-        npc = criar_npc()
+        npc = criar_npc(x + 1)
         lista_npcs.append(npc)
 
 
 def exibir_npcs ():
     for npc in lista_npcs:
-        print(f"Nome: {npc['nome']} || Level: {npc['level']} || Dano: {npc['dano']} || Vida: {npc['hp']}" )
+        print(f"Nome: {npc['nome']} || Level: {npc['level']} || Dano: {npc['dano']} || Vida: {npc['hp']} || Exp: {npc['exp']}" )
 
 
 ''''
@@ -55,15 +56,33 @@ CONSERTA
 
 '''
 
-#atacar_npc(npc) = npc:hp - player:dano
-#def atacar_npc(npc):
 
-atacar_player(npc) = player: hp - npc:dano
-
-
-
+def iniciar_batalha(npc):
+    atacar_player (npc)
+    atacar_npc(npc)
+    exibir_info_batalha(npc)
 
 
-gerar_npcs(3)
-exibir_npcs()
- 
+def atacar_npc(npc):
+    npc['hp'] -= player['dano']
+
+
+def atacar_player(npc):
+    player['hp'] -= npc['dano']
+
+
+gerar_npcs(5)
+#exibir_npcs()
+
+
+def exibir_info_batalha (npc):
+    print (f"Player: {player['hp']} || {player['hp_max']}")
+    print (f"NPC: {npc['nome']}: {npc ['hp']} || {npc['hp_max']}")
+
+npc_selecionado = lista_npcs[0]
+
+#outra maneira de formatar um print
+
+iniciar_batalha (npc_selecionado)
+
+

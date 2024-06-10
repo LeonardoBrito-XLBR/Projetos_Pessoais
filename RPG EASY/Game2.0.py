@@ -1,3 +1,9 @@
+'''
+implementar
+
+'''
+
+
 import os
 import time
 os.system("Cls || clear")
