@@ -3,14 +3,6 @@ os.system("cls || clear")
 from random import randint
 
 
-'''
-
-COLOCAR AS VARIAVEIS EM CAMCASE 
-LEMBRE-SE - 02/06/2024 > 22:12
-
-'''
-
-
 lista_npcs = []
 
 player = {
@@ -49,12 +41,6 @@ def gerar_npcs(num_npcs):
 def exibir_npcs ():
     for npc in lista_npcs:
         print(f"Nome: {npc['nome']} || Level: {npc['level']} || Dano: {npc['dano']} || Vida: {npc['hp']} || Exp: {npc['exp']}" )
-
-
-''''
-CONSERTA 
-
-'''
 
 
 def iniciar_batalha(npc):
