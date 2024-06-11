@@ -17,3 +17,8 @@ li {
 #msg{
     font-family: monospace;
 }
+
+.light-theme {
+    color: black;
+    background: #00FF00;
+}
