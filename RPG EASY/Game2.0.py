@@ -37,5 +37,3 @@ elif numero % 2 != 0:
 
 time.sleep(2)
 print ("\n\nFIM DO JOGO!")
-
-print("leonardo")
