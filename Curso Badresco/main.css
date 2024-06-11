@@ -1,0 +1,19 @@
+body {
+    font-family: monospace;
+}
+
+ul{
+    font-family: helvética;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+#msg{
+    font-family: monospace;
+}
