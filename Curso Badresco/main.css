@@ -14,11 +14,28 @@ li {
     list-style: square;
 }
 
-#msg{
-    font-family: monospace;
-}
 
 .light-theme {
-    color: black;
-    background: #00FF00;
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+}
+
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
 }
