@@ -53,8 +53,14 @@ body {
     width: 50px;
     border-radius: 50%;
     border: none;
+    
 }
 
 .btn:focus {
     outline-style: none;
+    
+}
+
+.titulo{
+    text-align: center;
 }
