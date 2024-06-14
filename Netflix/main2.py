@@ -1,12 +1,3 @@
-'''
-
-
-PEDIR VALIDAÇÃO DE SENHA
-
-CRIAR UM SISTEMA DE PAGAMENTO NA TROCA DOS PLANOS 
-
-'''
-
 
 #LIMPANDO O TERMINAL DO VS CODE
 import os
@@ -21,6 +12,9 @@ class Usuario(): #não precisava do ()
         #LEMBRE-SE, NÃO FICAR PRESO AO MESMO NOME 
         self.nome = nomeUsu
         self.email = emailUsu
+        self.senha = senhaUsu
+        
+        '''
         self.lista_plano = ['basic', 'premium', 'platina'] #LISTA DE PLANOS DISPONIVEIS
 
         #GARANTINDO MAIS UMA VEZ SE O PLANO ESTA DISPONIVEL
@@ -35,6 +29,8 @@ class Usuario(): #não precisava do ()
             self.plano = novo_plano
         else:
             print("plano invalido")
+    '''
+        
 
     def ver_filmes (self):
         
