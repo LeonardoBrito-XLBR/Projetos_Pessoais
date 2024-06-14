@@ -140,4 +140,4 @@ os.system("cls || clear")
 cliente.ver_filmes()
 print("\nPipoca? Refrigerante? Doces?")
 
-print ("hello word")
+
