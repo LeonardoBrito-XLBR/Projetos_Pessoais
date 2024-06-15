@@ -14,7 +14,7 @@ class Usuario(): #não precisava do ()
         self.email = emailUsu
         self.senha = senhaUsu
         
-        '''
+        
         self.lista_plano = ['basic', 'premium', 'platina'] #LISTA DE PLANOS DISPONIVEIS
 
         #GARANTINDO MAIS UMA VEZ SE O PLANO ESTA DISPONIVEL
@@ -29,7 +29,7 @@ class Usuario(): #não precisava do ()
             self.plano = novo_plano
         else:
             print("plano invalido")
-    '''
+   
         
 
     def ver_filmes (self):
@@ -135,5 +135,3 @@ os.system("cls || clear")
 
 cliente.ver_filmes()
 print("\nPipoca? Refrigerante? Doces?")
-
-
