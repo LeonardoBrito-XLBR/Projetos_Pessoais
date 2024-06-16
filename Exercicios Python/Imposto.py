@@ -13,13 +13,17 @@ FAZER A SEPARAÇÃO DOS PRODUTOS E APLICAR O ACRESSIMO NO VALOR FINAL
 '''
 def somaImposto (taxaImposto, custo):
     valor = taxaImposto * custo
-    return valor
+    valorFinal = valor + custo
+    return valorFinal
 
-taxa = 10.0
+
+    return 
+
+taxa = 0.10
 
 custo = 50
 
-resultado = somaImposto (taxa, custo)
+#formas de printa
+print (somaImposto (taxa, custo))
 
 
-print (resultado)
