@@ -1,23 +1,38 @@
 import os
-from dataclasses import dataclass
 
 os.system("cls || clear")
 
-@dataclass
-class Livro: 
-    nome: str = 'Geração'
-    preco: float = 59.90
-    dataValidade: int = 25
 
-# Criando uma instância da classe Livro
-livro1 = Livro()
+'''
+FAZER O SISTEMA DE MULTA BASEADO NO DIA QUE A PESSOA DIGITAR 
 
-dataNova: int = 30
 
-if livro1.dataValidade < dataNova:
-    livro1.preco += 2
-else:
-    print('De boa')
+TAREFAS ====
 
-print(f"{livro1.preco:.2f} foi o que você irá pagar!")
+terminar a def
+parar o laco
+conferir o print
+'''
+
+dataVencimento: int = [12, 6, 2024]
+
+def verifacao (dataUsu, mes, ano, dataVencimento):
+    resultado = dataUsu - dataVencimento
+
+    if dataUsu in dataVencimento:
+        print (f"A sua data de vencimento expirou a: {resultado} ")
+
+
+
+
+while True:
+    dataUsu = int(input("Digite aqui a sua data de vencimento: "))
+    mes = int(input('Digite o Mês: '))
+    ano = int(input('Digite o Ano: '))
+    parar = input ("Quer PARAR? (S/N): ")
+    if parar != 'S':
+        break 
+
+print(f"A data de vencimento: {dataUsu}/{mes}/{ano} registrada!")
+verifacao (dataUsu, mes, ano)
 
