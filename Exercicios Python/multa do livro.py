@@ -14,7 +14,12 @@ parar o laco
 conferir o print
 '''
 
-dataVencimento: int = [12, 6, 2024]
+dataVencimento = {
+
+    'data': 26,
+    'mes': 6,
+    'ano': 2024,
+}
 
 def verifacao (dataUsu, mes, ano, dataVencimento):
     resultado = dataUsu - dataVencimento
@@ -34,5 +39,5 @@ while True:
         break 
 
 print(f"A data de vencimento: {dataUsu}/{mes}/{ano} registrada!")
-verifacao (dataUsu, mes, ano)
+verifacao (dataUsu, mes, ano, dataVencimento)
 
