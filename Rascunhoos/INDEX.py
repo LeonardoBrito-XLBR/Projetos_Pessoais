@@ -1,4 +1,0 @@
-'''
-ESPAÇO PARA PAI
-
-'''
