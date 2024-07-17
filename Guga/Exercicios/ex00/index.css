@@ -1,6 +1,7 @@
 .Titulo {
     font-family:  monospace;
     text-align: center;
+    border: 20px double black;
 }
 
 * {
