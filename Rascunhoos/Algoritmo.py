@@ -2,18 +2,14 @@ import os
 
 os.system ("cls || clear")
 
-medidas = set()
+medidas = []
+resposta: bool
 
-stop = False
+for i in range (3):
+    lado = int (input (f"Digite o tamanho do seu { i + 1} lado: "))
+    medidas.append(lado)
 
-while stop == False:
-    for i in range (3):
-        lados = (input (f"Digite o {i+1} lado do seu triangulo: "))
-
-        if lados in medidas:
-            print ("Valor duplicado não é permitido")
-            stop = True
-        else:
-            medidas.add(lados)
-
-print (f"{medidas}")
+if medidas == medidas:
+    print ("Essas medidas e de um triangulo escaleno")
+else:
+    print ("Essas medidas nao e de um triangulo escaleno")
