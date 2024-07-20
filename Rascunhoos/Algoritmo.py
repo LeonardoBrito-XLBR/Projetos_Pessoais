@@ -34,4 +34,9 @@ while True:
 
 #CONTINUAR DEPOIS DAQUI E ANTES DAQUI
 
+#EXIBIR DETALHAMDAMENTE AS SITUACOES ABAIXO
+# FAZER UM COMBATE
+# TERMINAR O MONSTRO
+# 23/07/2024
+
 print (f"O nome: {player['nome'],  player['vida'], player ['ataque']}")
