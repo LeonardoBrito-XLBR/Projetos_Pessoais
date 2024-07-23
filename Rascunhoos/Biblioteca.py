@@ -1,5 +1,5 @@
 import os
-
+os.system("cls || clear")
 import time
 
 
@@ -11,6 +11,9 @@ resultado  = (numLidas / numTotal ) * 100
 print (f"Então vc leu cerca de {resultado:.2f}% do seu livro")
 
 '''
+
+#LISTA DE USUARIOS
+listaUsu = []
 
 #DECORAÇÃO
 def tabelaPrincipal():
@@ -37,8 +40,20 @@ def tabelaCompras ():
     print (" #4\t - A Sombra do Passado   - \tR$30 ")
     print (" #5\t - O Poder da Imaginação - \tR$35 ")
 
-def cadastrarUsuario ():
+def cadastrarUsuario (listaUsu):
+    nome = input ("Digite o seu nome completo: ")
+    login = input ("Digite o seu login: ")
+    senha = input ("Digite a sua senha: ")
     
+    usuario = {
+        "nome": nome,
+        "login" : login,
+        "senha": senha
+        
+    }
+
+    listaUsu.append(usuario)
+    return listaUsu
 
 opcaoUsu = tabelaPrincipal()
 
@@ -48,7 +63,9 @@ print(opcaoUsu)
 
 match opcaoUsu:
     case 1:
-        print("1 opcao aqui")
+        os.system("cls")
+        cadastrarUsuario(listaUsu)
+        print(listaUsu)
 
 
 # ====================================================================
