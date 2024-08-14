@@ -1,0 +1,45 @@
+
+/*
+HEIGHT = ALTURA
+width = largura
+margin = margem
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    background: linear-gradient(rgb(105, 3, 3), black) ;
+}
+
+#Titulo  {
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+    text-align: center;
+    border-style: dashed;
+    border-color: black;
+    color: rgb(233, 158, 19);
+}
+
+p{
+    font-size: 20px;
+    width: 50%;
+    color: rgb(255, 174, 0);
+    text-align: justify;
+    margin: auto;
+
+}
+
+hr {
+    height: 19px; 
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.video {
+    height: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    
+}
