@@ -16,7 +16,10 @@ body{
     font-family: "Permanent Marker", cursive;
     font-size: 40px;
     text-align: center;
+    width: fit-content;
+    margin: 0 auto;
     border-style: dashed;
+    border-width: 5px 6px;
     border-color: black;
     color: rgb(233, 158, 19);
 }
@@ -33,6 +36,8 @@ p{
 hr {
     height: 19px; 
     width: 50%;
+    border-radius: 80px;
+    border: black;
     background-color: rgb(0, 0, 0);
 }
 
@@ -41,5 +46,16 @@ hr {
     margin: auto;
     display: block;
     border-radius: 20px;
+    
+}
+
+img {
+    height: 300px;
+}
+
+.fotos {
+    width: fit-content;
+    margin: 0 auto;
+    object-fit: cover;
     
 }
