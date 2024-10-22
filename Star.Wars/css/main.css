@@ -1,0 +1,69 @@
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: url("../image/FUNDO.avif");
+}
+
+
+.selecao {
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    border: 4px solid;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 20px;
+}
+
+/* DECORAR TODOS OS RESUMOS */
+.filme p {
+    color: rgb(255, 196, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.filme{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+}
+img {
+   width: 200px;
+}
+
+h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: aliceblue;
+}
+.botoes {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.botao button {
+    width: 40px;
+}
+
+button {
+    background-color: black;
+    height: 30px;
+    color: beige;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+iframe {
+    width: 500px;
+
+
+}
