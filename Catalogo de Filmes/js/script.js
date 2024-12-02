@@ -57,7 +57,7 @@ const carregaLista = (json) => {
 }
 
 const changesPages = (e) => {
-    const buttonClicked = e.srcElement;
+    const buttonClicked = e.srcElement.parentElement;
     console.log(buttonClicked)
     
 

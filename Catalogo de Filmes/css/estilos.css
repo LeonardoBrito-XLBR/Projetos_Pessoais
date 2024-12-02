@@ -115,6 +115,10 @@ form button:hover{
     cursor: pointer;
 }
 
+.pages.active button i {
+    font-size: 1.8rem;
+}
+
 .item:hover{
     transition: 0.5s;
     color: white;
