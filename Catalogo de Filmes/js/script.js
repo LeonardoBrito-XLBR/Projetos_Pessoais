@@ -45,8 +45,10 @@ const carregaLista = (json) => {
         let item = document.createElement("div")
         item.classList.add("item");
 
+        const poster = element.Poster === "N/A" ? "https://www.shutterstock.com/image-vector/image-not-found-failure-network-260nw-2330163829.jpg" : element.Poster
+
         // PROCURAR UMA FORMA DE ATRIBUIR OS VALORES DO JSON
-        item.innerHTML = `<img src="${element.Poster}" /><h2>${element.Title}</h2>`;
+        item.innerHTML = `<img src="${poster}" /><h2>${element.Title}</h2>`;
 
         lista.appendChild(item);
     });
