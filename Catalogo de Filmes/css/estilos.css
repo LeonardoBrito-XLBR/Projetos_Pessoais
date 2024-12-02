@@ -71,3 +71,29 @@ form button:hover{
 .item img{
     width: 100%;
 }
+
+
+
+/* ESTILOS DO BOTAO */
+
+.pages {
+    display: none;
+    
+}
+
+
+.pages.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.pages.active button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
