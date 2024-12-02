@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalógo de Filmes</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/estilos.css">
+    <title>Catalógo de Filmes</title>
 </head>
 <body>
-    <h1 class="title">Filmes</h1>
+    <h1 class="title"> <img src="icone/pipoca.png"> Catalógo de Filmes<img src="icone/rolo-de-filme.png"></h1>
     <form action="">
-        <input type="text" name="pesquisa" placeholder="Digite o nome do filme">
-        <button>Pesquisar</button>
+        <input type="text" id="pesquisa" placeholder="Digite o nome do filme">
+        <button id="botao">Pesquisar</button>
     </form>
+    
+    <div class="pages">
+        <button class="last-page">
+            <i class='bx bxs-chevron-left'></i>
+        </button>
+        <p>
+            <span class="current-page"></span>
+            -
+            <span class="total-pages"></span>
+        </p>
+        <button class="next-page">
+            <i class='bx bxs-chevron-right'></i>
+        </button>
+
+    </div>
     <div class="lista">
         
     </div>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
