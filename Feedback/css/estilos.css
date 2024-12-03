@@ -1,0 +1,111 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    background-color: rgb(231, 14, 14);
+}
+
+
+.form-principal{
+    border: 1px solid black; /* VISUALIZAO */
+    border-radius: 20px;
+    background-color: white; /* VISUALIZAO */
+    padding: 25px;
+
+}
+
+
+/* COMO COLOCAR O TEXRO UM POUCO AFASTADO */
+
+.containe{
+    display: flex;
+    width: 300px;
+    gap: 5px;
+    flex-direction: column;
+    
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+} 
+
+.buttons button{
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttons{
+    margin-bottom: 10px;
+}
+
+#submit{
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border: none;
+}
+
+/* .btn-1{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-2{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-3{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn-4{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-5{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
