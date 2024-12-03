@@ -1,20 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;    
     height: 100vh;
-    background-color: rgb(231, 14, 14);
+    /* SUBSTITUIR PELO UMA IMAGEM ANIMADA  */
+    background-color: var(--VeryDarkBlue);
     font-family: "Overpass";
+}
+
+/* ESTILOS PARA AS FONTES E TEXTOS */
+h1{
+    color: var(--White);
+}
+
+p{
+    color: var(--LightGrey);
 }
 
 
 .form-principal{
     border: 1px solid black; /* VISUALIZAO */
     border-radius: 20px;
-    background-color: white; /* VISUALIZAO */
-    padding: 25px;
+    background-color: var(--DarkBlue); /* VISUALIZAO */
 
 }
 
@@ -24,10 +41,23 @@ body{
 .containe{
     display: flex;
     width: 300px;
-    gap: 5px;
     flex-direction: column;
+    padding: 30px;
     
 }
+
+.containe h1, .containe p {
+    margin: 0; /* Remove a margem padrão */
+}
+
+.containe h1 {
+    margin-bottom: 15px; /* Ajusta a margem inferior do h1 */
+}
+
+.containe p {
+    margin-bottom: 30px; /* Remove a margem superior do p */
+}
+
 
 
 /* ESTILOS PARA OS BOTOES */
@@ -36,10 +66,11 @@ body{
     justify-content: space-between;
     padding-bottom: 10px;
 
+    
 } 
 
 .buttons button{
-    background-color: blue;
+    background-color: var(--White);
     border-radius: 50%;
     border: none;
     width: 40px;
@@ -47,15 +78,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.buttons{
+    cursor: pointer;
     margin-bottom: 10px;
+    font-weight: bold;
+    
 }
+
+
 
 #submit{
-    background-color: red;
+    background-color: var(--Orange);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -63,6 +95,16 @@ body{
     width: 300px;
     height: 40px;
     border: none;
+    cursor: pointer;
 }
 
-/* ESTILOS PARA AS FONTES E TEXTOS */
+/* ANIMATION FOR OF BUTTONS MUDAREM DE COR */
+button:hover{
+    transition: 0.3s;
+    background-color: var(--Orange);
+}
+
+#submit:hover{
+    transition: 0.3s;
+    background-color: white;
+}
