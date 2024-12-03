@@ -29,7 +29,7 @@ p{
 
 
 .form-principal{
-    border: 1px solid black; /* VISUALIZAO */
+    border: none;
     border-radius: 20px;
     background-color: var(--DarkBlue); /* VISUALIZAO */
 
