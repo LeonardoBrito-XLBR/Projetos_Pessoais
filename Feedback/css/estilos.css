@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     display: flex;
@@ -6,6 +6,7 @@ body{
     align-items: center;    
     height: 100vh;
     background-color: rgb(231, 14, 14);
+    font-family: "Overpass";
 }
 
 
@@ -18,7 +19,7 @@ body{
 }
 
 
-/* COMO COLOCAR O TEXRO UM POUCO AFASTADO */
+/* COMO COLOCAR O TEXRO UM POUCO AFASTADO SEMELHANTE AO DESING??? */
 
 .containe{
     display: flex;
@@ -29,6 +30,7 @@ body{
 }
 
 
+/* ESTILOS PARA OS BOTOES */
 .buttons{
     display: flex;
     justify-content: space-between;
@@ -63,49 +65,4 @@ body{
     border: none;
 }
 
-/* .btn-1{
-    background-color: blue;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn-2{
-    background-color: blue;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn-3{
-    background-color: blue;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.btn-4{
-    background-color: blue;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn-5{
-    background-color: blue;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+/* ESTILOS PARA AS FONTES E TEXTOS */
